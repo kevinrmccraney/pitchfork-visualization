@@ -43,7 +43,7 @@
         <script type="text/javascript">
 
             d3.csv('./author_summ_sent.csv', function loadCallback(error, data) {
-                data.forEach(function(d) { // convert strings to numbers
+                data.forEach(function(d) { // convert strings
                     d.s_count = +d.s_count;
                     d.s_mean = +d.s_mean;
                     d.s_std = +d.s_std;
